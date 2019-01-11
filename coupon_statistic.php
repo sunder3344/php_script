@@ -35,7 +35,7 @@ do {
 	$now = time();
 	foreach ($response['Items'] as $v) {
 		if (isset($v['card_no']['S'])) {
-			if ($v['card_no']['S'] == 'BESTVSLZJ') {
+			if ($v['card_no']['S'] == 'SLZJ') {
 // 				echo $v['create_time']['N'].PHP_EOL;
 				$time = (int) $v['create_time']['N'];
 				if ($v['create_time']['N'] >= 1462896000 && $v['create_time']['N'] < 1464710400) {
